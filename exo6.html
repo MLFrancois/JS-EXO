@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exo 6 | day3</title>
+    <script>
+        // EXO 7
+        /*  var numero = parseInt(prompt());
+         if (numero % 2 == 0){
+             console.log("Es par");
+         }else{
+             console.log("Es impar");
+         } */
+
+        // EXO 8
+        /* var numberOne = parseInt(prompt());
+        var numberTwo = parseInt(prompt());
+
+        function numbPositive(un, deux) {
+            if (un >= 0 && deux >= 0) {
+                return un + deux + 0;
+            } else {
+                return "-1";
+            }
+        }
+
+        var somme = numbPositive(numberOne, numberTwo);
+        console.log("Números introducidos: " + numberOne + ", " + numberTwo);
+
+        if (somme == -1) {
+            console.log("No se calcula la suma porque alguno de los números o los dos no son positivos");
+        } else {
+            console.log("La suma de los dos números es: " + somme);
+        } */
+
+        //EXO 9
+        /* var year = parseInt(prompt());
+
+        function bisextilAno(numb) {
+            if (((numb % 4 == 0) && (numb % 100 != 0)) || (numb % 400 == 0)) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        var result = bisextilAno(year);
+        if (result == true) {
+            console.log("Es un año bisiesto");
+        } else {
+            console.log("No el año es bisiesto");
+        } */
+
+        //EXO 1
+        /* var salary = 1000;
+
+        function salarioSinRetencion(num) {
+            var newSalary = num * 0.8;
+            return newSalary;
+        }
+
+        var salary2 = salarioSinRetencion(salary);
+        console.log(salary2); */
+
+        //EXO 2
+        /*  
+        var numberOne =prompt();
+        var numberTwo =prompt();
+
+        var somme = numbPositive(numberOne,numberTwo);
+        if (somme != -1){
+            var somme2 = numbPositive(numberOne, numberTwo);
+            console.log("Números introducidos: " + numberOne + ", " + numberTwo);
+            console.log("La suma de los dos números es: " + somme2);
+        }else{
+            console.log("Números introducidos: " + numberOne + ", " + numberTwo);
+            console.log("No se calcula la suma porque alguno de los números o los dos no son enteros");
+        } 
+        function numbPositive(un, deux) {
+            if ((un % 1 == 0 && un >= 0) && (deux % 1 == 0 && deux >= 0)) {
+                un = parseInt(un);
+                deux =parseInt(deux);
+                return un + deux + 0;
+            } else {
+                return -1;
+            }
+        }
+        */
+
+        /* function numbPositive(un, deux) {
+            if (un >= 0 && deux >= 0) {
+                un = parseInt(un);
+                deux =parseInt(deux);
+                return un + deux + 0;
+            } else {
+                return -1;
+            }
+        }
+        function checkIntegral(un,deux){
+            var trois = parseInt(un);
+            var quatre = parseInt(deux);
+            if (un == trois && quatre == deux){
+                return true;
+            }else{
+                return -1;
+            }
+        }
+        var somme = checkIntegral(numberOne,numberTwo);
+        if (somme == true){
+            var somme2 = numbPositive(numberOne, numberTwo);
+            console.log("Números introducidos: " + numberOne + ", " + numberTwo);
+            console.log("La suma de los dos números es: " + somme2);
+        }else{
+            console.log("Números introducidos: " + numberOne + ", " + numberTwo);
+            console.log("No se calcula la suma porque alguno de los números o los dos no son enteros");
+        } */
+
+        // EXO 3
+
+        /* function checkIntegral(un) {
+            var deux = parseInt(un);
+            if (un == deux) {
+                return true;
+            } else {
+                return -1;
+            }
+        }
+
+        function sumatoria(number1, number2, number3) {
+            if (number1 == (number2 + number3)) {
+                return "Número 1 es igual a Número 2 + Número 3";
+            } else {
+                if (number2 == number1 + number3) {
+                    return "Número 2 es igual a Número 1 + Número 3";
+                } else {
+                    if (number3 == number1 + number2) {
+                        return "Número 3 es igual a Número 1 + Número 2";
+                    } else {
+                        return "Los números no cumplen la condición";
+                    }
+                }
+            }
+        }
+        var numberOne = prompt();
+        var numberTwo = prompt();
+        var numberThree = prompt();
+
+        if (checkIntegral(numberOne) && checkIntegral(numberTwo) && checkIntegral(numberThree)) {
+            var result = sumatoria(numberOne, numberTwo, numberThree);
+            console.log(result);
+        } else {
+            console.log("Números introducidos: " + numberOne + ", " + numberTwo + ", " + numberThree);
+            console.log("Los números no cumplen la condición");
+        } */
+
+        /* var numero1 = prompt("Introduce el primer número");
+        var numero2 = prompt("Introduce el segundo número");
+        var numero3 = prompt("Introduce el tercer número");
+
+        if (esEntero(numero1) && esEntero(numero2) && esEntero(numero3)) {
+            console.log(typeof(numero1));
+            number1 = numero2 + numero3;
+            console.log(numero1);
+            numero1 = parseInt(numero1);
+            numero2 = parseInt(numero2);
+            numero3 = parseInt(numero3);
+            var resultado = sumatoria(numero1, numero2, numero3);
+            console.log(resultado);
+        } else {
+            console.log("Los numeros introducidos no son enteros");
+        }
+
+        function esEntero(num) {
+            var parteEntera = parseInt(num);
+
+            if (parteEntera == num) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function sumatoria(number1, number2, number3) {
+            if (number1 == (number2 + number3)) {
+                return "Número 1 es igual a Número 2 + Número 3";
+            } else {
+                if (number2 == number1 + number3) {
+                    return "Número 2 es igual a Número 1 + Número 3";
+                } else {
+                    if (number3 == number1 + number2) {
+                        return "Número 3 es igual a Número 1 + Número 2";
+                    } else {
+                        return "Los números no cumplen la condición";
+                    }
+                }
+            }
+        } */
+
+        // EXO 4 
+        /* var numero1 = prompt("Introduce el primer número");
+        var numero2 = prompt("Introduce el segundo número");
+        var numero3 = prompt("Introduce el tercer número");
+        if (esEntero(numero1) && esEntero(numero2) && esEntero(numero3)) {
+            numero1 = parseInt(numero1);
+            numero2 = parseInt(numero2);
+            numero3 = parseInt(numero3);
+            if (sumatoria(numero1, numero2, numero3) == true) {
+                console.log("Si que se cumple que la suma de dos números sea igual al tercero");
+            } else {
+                console.log("No se cumple que la suma de dos números sea igual al tercero")
+            }
+        } else {
+            console.log("Los numeros introducidos no son enteros");
+        }
+
+        function esEntero(num) {
+            var parteEntera = parseInt(num);
+            if (parteEntera == num) {
+                return true;
+            } else {
+                return false;
+            }
+        }
+
+        function sumatoria(number1, number2, number3) {
+            if (number1 == (number2 + number3)) {
+                return true;
+            } else {
+                if (number2 == number1 + number3) {
+                    return true;
+                } else {
+                    if (number3 == number1 + number2) {
+                        return true;
+                    } else {
+                        return false;
+                    }
+                }
+            }
+        } */
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

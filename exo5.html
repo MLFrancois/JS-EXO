@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>EXO 5 | day2</title>
+    <script>
+        var resultado = categoriaJugador(14, 45, 165);
+        console.log("-" + resultado + "-");
+
+        function categoriaJugador(yearsOld, weight, height) {
+            if ((yearsOld >= 6 && yearsOld <= 10) || (weight < 35) || (height < 120)) {
+                return "Benjamin";
+            } else if ((yearsOld > 10 && yearsOld <= 13) || (weight < 50) || (height < 150)) {
+                return "Infantil";
+            } else if ((yearsOld > 13 && yearsOld <= 16) || (weight < 80) || (height < 180)) {
+                return "Cadete";
+            } else {
+                return "Error";
+            }
+        }
+        var resultado = soyMayor(20);
+
+        function soyMayor(edad) {
+
+            if (edad < 30) {
+                console.log("Que va!! estás hecho un chaval!!");
+            } else {
+                console.log("Bueno, ya tienes tus primaveras...");
+            }
+
+        }
+        var result = parseCadena(20);
+        var type = typeof (number);
+    console.log(type);
+        function parseCadena(number) {
+            return "" + number;
+        }
+     
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
